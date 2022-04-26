@@ -6,10 +6,12 @@ public class CustomListApplication {
 		
 		CustomList<String> myCustomList = new CustomArrayList<>();
 
-		for (int j = 1; j <= 111; j++) {
+		for (int j = 1; j <= 10; j++) {
 			String elem = "element " + String.valueOf(j);
 			myCustomList.add(elem);
 		}
+		
+		myCustomList.add("element 11");
 
 		for (int i = 0; i < myCustomList.getSize(); i++) {
 			System.out.println(myCustomList.get(i));

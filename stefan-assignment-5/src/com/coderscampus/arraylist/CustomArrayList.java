@@ -11,7 +11,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 
 	@Override
 	public boolean add(T item) {
-		if (place == items.length - 1) {
+		if (place == items.length) {
 			size = size * 2;
 			items = Arrays.copyOf(items, size);
 		}
